@@ -14,9 +14,12 @@ add_library(3d_Engine SHARED
     Source/Window.cpp
 )
 
+set_target_properties(3d_Engine PROPERTIES LINKER_LANGUAGE CXX)
+
 target_include_directories(3d_Engine
     PRIVATE
         Include
+        Source
 )
 
 target_link_libraries(3d_Engine
